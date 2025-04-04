@@ -19,10 +19,8 @@ Ensure that you have CMake (version 3.28 or later) and a C++17-compliant compile
   make
   ./Poker_Game_99
   ```
-## Game Flow
-- **Game Initialization:**  Follow the prompts to enter the number of players (2-5), player names, whether they are AI, and the card size.
-- **Round Progression:** In each round, players take turns playing and drawing cards. Card effects (e.g., "4", "10", "Q") influence the round score and game state.
-- **End Conditions:** When a player is unable to play a card or has run out of cards, the system determines win/loss and accumulates scores according to the game rules.
-- **Results Display:** At the end of each round, the system displays the scores and final rankings of all players.
-  
+## Game Rules
+
+For detailed game rules, please refer to the [Game Rules](docs/rules.md) document.
+
 ![GitHub Views](https://komarev.com/ghpvc/?username=chen941008&repo=Poker_Game_99) 
