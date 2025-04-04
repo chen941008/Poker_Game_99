@@ -1,0 +1,3 @@
+# 忽略 CMake & 編譯產物
+build/
+.vscode/
