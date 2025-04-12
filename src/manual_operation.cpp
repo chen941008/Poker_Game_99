@@ -5,7 +5,7 @@
 
 #include "game.hpp"  // 為了使用 Game::getInstance()
 std::optional<Poker> ManualOperation::playCard(int currentPoint, const std::vector<Poker>& hand) {
-    const std::vector<std::string> numericCandidates = {"A", "2", "3", "6", "7", "8", "9"};
+    const std::vector<std::string> numericCandidates = {"2", "3", "6", "7", "8", "9"};
     std::vector<Poker> validCards;
 
     // 掃描手牌，找出所有屬於數字牌候選且 currentPoint + 牌值 <= 99 的牌
@@ -45,6 +45,9 @@ std::optional<Poker> ManualOperation::playCard(int currentPoint, const std::vect
         std::string num = card.getNumber();
         // 如果是 "4"，只有在玩家數為 4時才視為功能牌
         if (num == "4" && playerCount != 4) {
+            continue;  // 跳過不當作功能牌
+        }
+        if(num == "A" && card.getSuit() != spade) {
             continue;  // 跳過不當作功能牌
         }
         // 如果該牌不屬於數字牌候選（numericCandidates），則視為功能牌

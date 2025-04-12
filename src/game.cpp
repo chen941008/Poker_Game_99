@@ -297,7 +297,7 @@ void Game::runGame() {
                 if (currentPlayer.getHand().empty()) {
                     std::cout << "Player " << currentPlayer.getName() << " has no cards left. " << std::endl;
                 }
-                std::cout << "Player " << currentPlayer.getName() << "has finished the round. " << std::endl;
+                std::cout << "Player " << currentPlayer.getName() << " has finished the round. " << std::endl;
                 currentPlayer.setIsWinOrLose(true);
                 currentPlayer.addScore(_getWinnerOrLoserPoint(true));
                 _addWinnerCount();
