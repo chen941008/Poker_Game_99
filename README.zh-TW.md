@@ -13,6 +13,7 @@
 ### 2. 編譯與執行
 請確保已安裝 CMake（版本 3.28 或更高）以及支援 C++17 的編譯器，然後依照以下步驟操作：
   ```bash
+  cd Poker_Game_99
   mkdir build
   cd build
   cmake ..

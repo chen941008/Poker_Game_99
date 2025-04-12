@@ -13,6 +13,7 @@ Poker_Game_99 is an object-oriented poker game project written in C++ that utili
 ### 2. Build and Run
 Ensure that you have CMake (version 3.28 or later) and a C++17-compliant compiler installed, then follow these steps:
   ```bash
+  cd Poker_Game_99
   mkdir build
   cd build
   cmake ..
